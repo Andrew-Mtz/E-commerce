@@ -1,0 +1,14 @@
+.contact-container {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 20px 60px;
+
+  @media (min-width: 1400px) {
+    max-width: 1400px;
+  }
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}

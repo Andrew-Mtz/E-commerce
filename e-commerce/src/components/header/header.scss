@@ -1,0 +1,59 @@
+@import "../../../public/variables";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 80%;
+    border-bottom: 1px solid $grayishBlue;
+    position: fixed;
+    top: 0;
+    background-color: $lightWhite;
+    z-index: 9999;
+
+    @media (min-width: 1400px) {
+      height: 100px;
+      max-width: 1400px;
+    }
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    margin-right: 3em;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+
+  .user-profile {
+    height: 56px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-photo {
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+      cursor: pointer;
+      box-sizing: content-box;
+      border-radius: 50%;
+      border: 3px solid $orange;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../../public/variables";
+
+.card {
+  width: calc(20% - 10px);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 250px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .discount {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: $orange;
+      color: $white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  }
+
+  .card-content {
+    width: 100%;
+    margin-top: 8px;
+
+    .card-title {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .card-price {
+      display: flex;
+
+      .current-price {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .old-price {
+        font-size: 14px;
+        color: #888888;
+        text-decoration: line-through;
+        margin-left: 8px;
+      }
+    }
+  }
+}

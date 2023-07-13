@@ -1,0 +1,27 @@
+@import "../../../../public/variables";
+
+.small-images {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .small-image {
+    width: 80px;
+    border-radius: 15px;
+
+    @media (min-width: 1400px) {
+      width: 100px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 50%;
+    }
+
+    &.active {
+      opacity: 50%;
+      border: 3px solid $orange;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.product-images {
+  width: 45%;
+  padding-left: 50px;
+
+  @media (min-width: 1400px) {
+    box-sizing: border-box;
+  }
+
+  .large-image {
+    width: 100%;
+    border-radius: 15px;
+  }
+}

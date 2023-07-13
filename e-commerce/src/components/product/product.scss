@@ -1,0 +1,18 @@
+@import "../../../public/variables";
+
+.product-details {
+  width: 40%;
+  padding: 50px;
+
+  @media (min-width: 1400px) {
+    padding: 80px 50px;
+  }
+
+  .quantity-to-cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

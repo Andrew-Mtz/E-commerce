@@ -1,0 +1,13 @@
+.collections-products-container {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 60px 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @media (min-width: 1400px) {
+    max-width: 1400px;
+  }
+}

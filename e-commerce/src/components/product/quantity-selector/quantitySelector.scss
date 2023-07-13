@@ -1,0 +1,20 @@
+@import "../../../../public/variables";
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  background-color: $lightGrayishBlue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn-quantity-selector {
+  cursor: pointer;
+}
+
+.quantity {
+  color: $black;
+  width: 25px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
